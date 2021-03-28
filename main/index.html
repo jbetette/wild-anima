@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jourdan Betette - Front-End Engineer & Graphic Designer</title>
+  <meta name="description" content="The official website of Jourdan Betette, American Front-end engineer and owner of Wild Anima Design LLC which aims to help small- to medium- sized businesses needing creative solutions for their online presence.">
+  <meta name="author" content="Jourdan Betette" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+
+<!-- You are looking at this code. Bravo!
+
+    1. For the moving particles look at
+
+    https://vincentgarreau.com/particles.js/
+
+      Go get em tiger! Jourdan :-D
+
+      !-->
+
+</head>
+<body>
+
+
+
+
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+
+<body>
+   <div class="page-background" id="particles"></div>
+   <div class="page-container">
+     <div class="page-content">
+       <main>
+         <div class="profile-column">
+           <div class="profile-container">
+             <div class="profile">
+               <div class="profile-content">
+                 <div class="head">
+                   <div class="image"></div>
+                   <div class="name-headline">
+                     <section>
+                       <h1 class="name">Jourdan Betette</h1>
+                     </section>
+                     <section>
+                       <h2 class="headline">
+                         <span class="roles">
+                           <span class="role">Front-end Engineer & Graphic Artist</span>
+                         </span>
+                       </h2>
+                     </section>
+                   </div>
+                 </div>
+
+                 <div class="body">
+                   <section class="spotlight">
+                     <a
+                       href="https://www.linkedin.com/in/jourdan-betette-9432a1170/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button"> Connect on Linkedin</a>
+                   </section>
+                   <section class="bio">
+                     <div>
+                       <p>
+                        Hey there, I'm Jourdan. I'm a front-end engineer from the Northern Virginia, USA and a fan of
+                        Adobe Creative Suite, Javascript, HTML, CSS and Shopify. My background is in graphic design and Illustration.
+                        I taught myself HTML in 1998 when I was 13. Still goin' strong.
+                       </p>
+                     </div>
+                   </section>
+                   <section class="interests">
+                     <ul class="inline">
+                       <li class="interest">#javascript</li>
+                       <li class="interest">#html</li>
+                       <li class="interest">#css</li>
+                       <li class="interest">#shopify</li>
+                       <li class="interest">#graphicdesign</li>
+                     </ul>
+                   </section>
+                   <section class="meta">
+                     <ul class="meta-sections">
+                       <li class="meta-section schools">
+                         <div class="meta-header">EXPERTISE</div>
+                         <ul class="meta-list">
+                           <li class="meta-item">Shopify E-Commerce</li>
+                           <li class="meta-item">
+                             Adobe Create Suite
+                           </li>
+                           <li class="meta-item">
+                             UI/UX Consulting
+                           </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </section>
+                   <section class="social-links">
+                     <ul class="inline">
+                       <li class="contact-me" title="Send me a message">
+                         <a
+                           class="social-link"
+                           title="Send me a message"
+                           alt="Send me a message"
+                           aria-label="Send me a message via email"
+                           href="mailto:jourdan@wild-anima.co"
+                           ><span class="SVGInline"
+                             ><svg
+                               class="SVGInline-svg"
+                               viewBox="0 0 36 18"
+                               xmlns="http://www.w3.org/2000/svg"
+                             ><path
+                               d="M17.9864841,17.7442683 L35.9560572,4.24918119 C35.9560572,2.99963608 34.9577476,2 33.7098606,2 L2.26310764,2 C1.01522062,2 0.0169109976,2.99963608 0.0169109976,4.24918119 L17.9864841,17.7442683 Z M17.9864841,21.7844641 L0.0169109976,8.28937702 L0.0777647581,29.7508188 C0.0777647581,31.0003639 1.07607438,32 2.3239614,32 L33.7707144,32 C35.0186014,32 36.016911,31.0003639 36.016911,29.7508188 L35.9560572,8.28937702 L17.9864841,21.7844641 Z"
+                             ></path></svg></span>
+                         </a>
+                       </li>
+                       <li>
+                         <a
+                           class="social-link"
+                           title="Visit me on Twitter"
+                           alt="Visit me on Twitter"
+                           aria-label="Follow my updates on Twitter"
+                           href="https://www.twitter.com/jbetette"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           ><span class="SVGInline"
+                             ><svg
+                               class="SVGInline-svg"
+                               xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 1000 1000"
+                             >
+                               <path
+                                 d="M1000 500c0 277-223 500-500 500s-500-223-500-500 223-500 500-500 500 223 500 500zm-125-183c-25 11-53 18-82 22 30-17 51-45 61-79-28 17-57 28-89 35-25-28-62-45-103-45-78 0-141 63-141 142 0 10 1 22 3 32-118-5-223-62-294-149-11 22-18 46-18 72 0 50 24 93 62 118-23 0-45-7-64-18v2c0 69 49 126 114 140-12 3-24 4-37 4-9 0-19-1-27-2 18 57 71 95 132 96-48 38-108 65-176 65-11 0-23-1-33-2 62 40 138 62 217 62 262 0 404-216 404-404v-18c28-19 51-45 71-73z"
+                               ></path></svg></span
+                         ></a>
+                       </li>
+                       <li>
+                         <a
+                           class="social-link"
+                           title="Visit me on GitHub"
+                           alt="Visit me on GitHub"
+                           aria-label="Come and visit my repositories on GitHub"
+                           href="https://github.com/Jbetette"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           ><span class="SVGInline"
+                             ><svg
+                               class="SVGInline-svg"
+                               xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 1000 1000"
+                             >
+                               <path
+                                 d="M1000 508c0 232-160 429-375 485v-131c0-41-10-98-52-131 134-20 239-99 239-223 0-51-21-102-58-144 11-47 17-105-4-148-53 5-106 32-145 56-33-8-67-14-105-14s-73 6-106 14c-39-24-91-51-144-56-21 43-16 101-5 148-37 42-57 93-57 144 0 124 105 203 239 223-20 15-32 36-40 57-105 2-189-81-190-81-5-4-12-5-16-2-6 3-9 10-7 16 2 5 44 124 201 172v100c-215-56-375-253-375-485 0-275 223-500 500-500 275 0 500 225 500 500z"
+                               ></path></svg></span
+                         ></a>
+                       </li>
+                       <li>
+                         <a
+                           class="social-link"
+                           title="Visit me on Linkedin"
+                           alt="Visit me on Linkedin"
+                           aria-label="Check out my Linkedin"
+                           href="https://www.linkedin.com/in/jourdan-betette-9432a1170/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >
+                           <span class="SVGInline">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                          </a>
+                       </li>
+                       <li>
+                         <a
+                           class="social-link"
+                           title="Visit me on Stack Overflow"
+                           alt="Visit me on Stack Overflow"
+                           aria-label="See my questions and answers on Stack Overflow"
+                           href="https://stackexchange.com/users/14695428/j-betette"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           ><span class="SVGInline"
+                             ><svg
+                               class="SVGInline-svg"
+                               viewBox="0 0 1000 1000"
+                               version="1.1"
+                               xmlns="http://www.w3.org/2000/svg"
+                               xlink="http://www.w3.org/1999/xlink"
+                             >
+                               <path
+                                 d="M500,0 C776.142375,0 1000,223.857625 1000,500 C1000,776.142375 776.142375,1000 500,1000 C223.857625,1000 0,776.142375 0,500 C0,223.857625 223.857625,0 500,0 Z M251,863 L724,863 L724,562 L667,562 L667,804 L304,804 L306,562 L251,561 L251,863 Z M340,704 L340,764 L624,764 L624,704 L340,704 Z M341,657 L626,684 L632,622 L347,595 L341,657 Z M356,531 L631,609 L648,550 L373,472 L356,531 Z M407,385 L651,533 L684,480 L439,332 L407,385 Z M529,237 L695,470 L746,434 L579,201 L529,237 Z M711,148 L758,430 L819,420 L772,138 L711,148 Z"
+                               ></path></svg></span
+                         ></a>
+                       </li>
+                     </ul>
+                   </section>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </main>
+     </div>
+   </div>
+
+
+
+</body>
+</html>
